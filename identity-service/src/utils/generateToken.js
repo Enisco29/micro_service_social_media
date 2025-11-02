@@ -3,7 +3,7 @@ import crypto from "crypto";
 import RefreshToken from "../models/RefreshToken.js";
 
 const generateTokens = async (user) => {
-  const accesToken = jwt.sign(
+  const accessToken = jwt.sign(
     {
       userId: user._id,
       username: user.username,

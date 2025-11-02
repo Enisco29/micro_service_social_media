@@ -31,14 +31,14 @@ export const registerUser = async (req, res) => {
 
     user = new User({ username, email, password });
     await user.save();
-    logger.warn("User saved successfully", user._id);
+    logger.info("User saved successfully", { userId: user._id });
 
-    const { accesToken, refreshToken } = await generateTokens(user);
+    const { accessToken, refreshToken } = await generateTokens(user);
 
     res.status(201).json({
       success: true,
       message: "User registered successfully",
-      accesToken,
+      accessToken,
       refreshToken,
     });
   } catch (error) {
