@@ -25,7 +25,7 @@ export const registerUser = async (req, res) => {
       logger.warn("User already exists");
       return res.status(400).json({
         success: false,
-        message: error.details[0].message,
+        message: "User already exists",
       });
     }
 
