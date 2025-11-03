@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json());
 
 //rate limiting
-const rateLimit = rateLimit({
+const rateLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 100,
   standardHeaders: true,
@@ -35,7 +35,7 @@ const rateLimit = rateLimit({
   }),
 });
 
-app.use(rateLimit);
+app.use(rateLimiter);
 
 app.use((req, res, next) => {
   logger.info(`Received ${req.method} request to ${req.url}`);
@@ -61,10 +61,10 @@ const proxyOptions = {
 app.use(
   "/v1/auth",
   proxy(process.env.IDENTITY_SERVICE_URL, {
-    ...proxy,
-    proxyReqOptDecorator: (proxyreqOpts, srcReq) => {
-      proxyreqOpts.headers["Content-Type"] = "application/json";
-      return proxyreqOpts;
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers["Content-Type"] = "application/json";
+      return proxyReqOpts;
     },
     userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
       logger.info(
