@@ -22,7 +22,7 @@ const generateTokens = async (user) => {
     expiresAt,
   });
 
-  return { accesToken, refreshToken };
+  return { accessToken, refreshToken };
 };
 
 export default generateTokens;
