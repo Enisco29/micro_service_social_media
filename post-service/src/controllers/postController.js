@@ -1,13 +1,24 @@
 import logger from "../utils/logger.js";
 
-export const createPost = (req, res) => {
+export const createPost = async (req, res) => {
   logger.info("create post endpoint hit..");
   try {
     const { content, mediaIds } = req.body;
 
     const newPost = {
       user: req.user.userId,
+      content,
+      mediaIds: mediaIds || [],
     };
+
+    await newPost.save();
+
+    logger.info("Post created successfully", newPost);
+
+    res.status(201).json({
+      success: true,
+      message: "Post created successfully",
+    });
   } catch (error) {
     logger.error("Error creating post:", error);
     res.status(500).json({
