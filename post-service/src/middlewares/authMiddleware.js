@@ -1,7 +1,7 @@
 import logger from "../utils/logger.js";
 
 export const autheticatedRequest = (req, res, next) => {
-  const userId = req.headers("x-user-id");
+  const userId = req.headers["x-user-id"];
 
   if (!userId) {
     logger.warn(`Access attempted without user ID`);
@@ -11,6 +11,6 @@ export const autheticatedRequest = (req, res, next) => {
     });
   }
 
-  req.user = userId;
+  req.user = { userId };
   next();
 };

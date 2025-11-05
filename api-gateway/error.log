@@ -1,2 +1,4 @@
 {"level":"error","message":"Error: connect ECONNREFUSED 127.0.0.1:3001\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)","service":"api-gateway","timestamp":"2025-11-03T21:12:29.266Z"}
 {"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-11-03T21:14:10.315Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-11-05T14:08:38.301Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-11-05T14:09:44.486Z"}

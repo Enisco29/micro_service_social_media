@@ -1,0 +1,88 @@
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-04T22:57:21.852Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-04T22:57:33.736Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T13:33:15.682Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T13:33:32.770Z"}
+{"level":"info","message":"Received GET request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:12:22.120Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:12:22.121Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:12:26.751Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:12:26.752Z"}
+{"level":"info","message":"create post endpoint hit..","service":"post-service","timestamp":"2025-11-05T14:12:26.753Z"}
+{"level":"error","message":"Error creating post: newPost.save is not a function","service":"post-service","stack":"TypeError: newPost.save is not a function\n    at createPost (file:///home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/src/controllers/postController.js:14:19)\n    at Layer.handleRequest (/home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/router/lib/layer.js:152:17)\n    at next (/home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/router/lib/route.js:157:13)\n    at Route.dispatch (/home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/router/lib/route.js:117:3)\n    at handle (/home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/router/index.js:435:11)\n    at Layer.handleRequest (/home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/router/lib/layer.js:152:17)\n    at /home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/router/index.js:295:15\n    at processParams (/home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/router/index.js:582:12)\n    at next (/home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/router/index.js:291:5)\n    at autheticatedRequest (file:///home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/src/middlewares/authMiddleware.js:15:3)","timestamp":"2025-11-05T14:12:26.754Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T14:18:42.342Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T14:18:59.204Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T14:20:13.388Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T14:20:30.217Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:21:50.787Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:21:50.788Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T14:21:50.790Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T14:25:11.995Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T14:29:04.942Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T14:29:22.362Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:30:16.678Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:30:16.679Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T14:30:16.680Z"}
+{"0":"\"","1":"c","10":"i","11":"s","12":" ","13":"r","14":"e","15":"q","16":"u","17":"i","18":"r","19":"e","2":"o","20":"d","3":"n","4":"t","5":"e","6":"n","7":"t","8":"\"","9":" ","level":"warn","message":"Validation error","service":"post-service","timestamp":"2025-11-05T14:30:16.688Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:31:12.409Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:31:12.410Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T14:31:12.411Z"}
+{"_message":"Post validation failed","errors":{"user":{"kind":"required","message":"Path `user` is required.","name":"ValidatorError","path":"user","properties":{"message":"Path `user` is required.","path":"user","type":"required"}}},"level":"error","message":"Error creating post: Post validation failed: user: Path `user` is required.","service":"post-service","stack":"ValidationError: Post validation failed: user: Path `user` is required.\n    at Document.invalidate (/home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/mongoose/lib/document.js:3362:32)\n    at /home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/mongoose/lib/document.js:3123:17\n    at /home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/mongoose/lib/schemaType.js:1420:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)","timestamp":"2025-11-05T14:31:12.435Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:33:07.216Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:33:07.216Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T14:33:07.217Z"}
+{"_message":"Post validation failed","errors":{"user":{"kind":"required","message":"Path `user` is required.","name":"ValidatorError","path":"user","properties":{"message":"Path `user` is required.","path":"user","type":"required"}}},"level":"error","message":"Error creating post: Post validation failed: user: Path `user` is required.","service":"post-service","stack":"ValidationError: Post validation failed: user: Path `user` is required.\n    at Document.invalidate (/home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/mongoose/lib/document.js:3362:32)\n    at /home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/mongoose/lib/document.js:3123:17\n    at /home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/mongoose/lib/schemaType.js:1420:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)","timestamp":"2025-11-05T14:33:07.222Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T14:38:26.278Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T14:38:43.012Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T14:38:59.994Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T14:39:01.697Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T14:39:22.364Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T14:39:28.947Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:39:37.546Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:39:37.547Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T14:39:37.549Z"}
+{"buffer":{"data":[105,11,97,169,23,35,150,128,69,176,173,78],"type":"Buffer"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-11-05T14:39:37.740Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:44:04.941Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:44:04.941Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T14:44:04.942Z"}
+{"buffer":{"data":[105,11,98,180,23,35,150,128,69,176,173,80],"type":"Buffer"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-11-05T14:44:05.141Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T14:44:55.612Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T14:45:12.933Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:45:19.129Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:45:19.129Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T14:45:19.135Z"}
+{"buffer":{"data":[105,11,98,255,38,183,206,193,232,159,106,204],"type":"Buffer"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-11-05T14:45:19.313Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:45:21.521Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:45:21.521Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T14:45:21.523Z"}
+{"buffer":{"data":[105,11,99,1,38,183,206,193,232,159,106,206],"type":"Buffer"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-11-05T14:45:21.689Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:45:23.445Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:45:23.446Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T14:45:23.448Z"}
+{"buffer":{"data":[105,11,99,3,38,183,206,193,232,159,106,208],"type":"Buffer"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-11-05T14:45:23.605Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:45:25.249Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:45:25.249Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T14:45:25.253Z"}
+{"buffer":{"data":[105,11,99,5,38,183,206,193,232,159,106,210],"type":"Buffer"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-11-05T14:45:25.474Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:45:27.082Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:45:27.082Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T14:45:27.085Z"}
+{"buffer":{"data":[105,11,99,7,38,183,206,193,232,159,106,212],"type":"Buffer"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-11-05T14:45:27.262Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:45:55.635Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:45:55.636Z"}
+{"level":"warn","message":"Rate limit exceeded for IP: ::ffff:127.0.0.1 ","service":"post-service","timestamp":"2025-11-05T14:45:55.638Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:45:58.416Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:45:58.417Z"}
+{"level":"warn","message":"Rate limit exceeded for IP: ::ffff:127.0.0.1 ","service":"post-service","timestamp":"2025-11-05T14:45:58.419Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:45:59.898Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:45:59.899Z"}
+{"level":"warn","message":"Rate limit exceeded for IP: ::ffff:127.0.0.1 ","service":"post-service","timestamp":"2025-11-05T14:45:59.900Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:46:01.300Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:46:01.300Z"}
+{"level":"warn","message":"Rate limit exceeded for IP: ::ffff:127.0.0.1 ","service":"post-service","timestamp":"2025-11-05T14:46:01.303Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T14:49:31.536Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T14:49:48.421Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T14:50:04.141Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T14:50:06.487Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T14:50:26.560Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:50:26.561Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T14:50:26.566Z"}
+{"buffer":{"data":[105,11,100,50,159,117,161,227,101,239,34,112],"type":"Buffer"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-11-05T14:50:26.744Z"}
