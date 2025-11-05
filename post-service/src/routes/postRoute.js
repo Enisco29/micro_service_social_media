@@ -1,5 +1,5 @@
 import express from "express";
-import { createPost } from "../controllers/postController.js";
+import { createPost, getAllPost } from "../controllers/postController.js";
 import { autheticatedRequest } from "../middlewares/authMiddleware.js";
 import { rateLimitByIP } from "../middlewares/rateLimit.js";
 
@@ -9,5 +9,6 @@ const router = express();
 router.use(autheticatedRequest);
 
 router.post("/create-post", rateLimitByIP, createPost);
+router.get("/all-posts", getAllPost);
 
 export default router;

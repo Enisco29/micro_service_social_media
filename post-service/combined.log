@@ -86,3 +86,117 @@
 {"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T14:50:26.561Z"}
 {"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T14:50:26.566Z"}
 {"buffer":{"data":[105,11,100,50,159,117,161,227,101,239,34,112],"type":"Buffer"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-11-05T14:50:26.744Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:05:30.715Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:05:47.344Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:10:16.618Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:10:39.050Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:11:52.203Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:12:10.497Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:13:01.218Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:13:27.354Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:14:19.718Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:14:22.880Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:14:26.022Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:14:53.490Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:15:35.486Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:17:08.179Z"}
+{"cause":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"ac-oftryst-shard-00-00.mnljjja.mongodb.net:27017":{"$clusterTime":null,"address":"ac-oftryst-shard-00-00.mnljjja.mongodb.net:27017","arbiters":[],"electionId":null,"error":null,"hosts":[],"iscryptd":false,"lastUpdateTime":7462223,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-oftryst-shard-00-01.mnljjja.mongodb.net:27017":{"$clusterTime":null,"address":"ac-oftryst-shard-00-01.mnljjja.mongodb.net:27017","arbiters":[],"electionId":null,"error":null,"hosts":[],"iscryptd":false,"lastUpdateTime":7462223,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-oftryst-shard-00-02.mnljjja.mongodb.net:27017":{"$clusterTime":null,"address":"ac-oftryst-shard-00-02.mnljjja.mongodb.net:27017","arbiters":[],"electionId":null,"error":null,"hosts":[],"iscryptd":false,"lastUpdateTime":7462223,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":"atlas-140ur2-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"errorLabelSet":{},"level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"ac-oftryst-shard-00-00.mnljjja.mongodb.net:27017":{"$clusterTime":null,"address":"ac-oftryst-shard-00-00.mnljjja.mongodb.net:27017","arbiters":[],"electionId":null,"error":null,"hosts":[],"iscryptd":false,"lastUpdateTime":7462223,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-oftryst-shard-00-01.mnljjja.mongodb.net:27017":{"$clusterTime":null,"address":"ac-oftryst-shard-00-01.mnljjja.mongodb.net:27017","arbiters":[],"electionId":null,"error":null,"hosts":[],"iscryptd":false,"lastUpdateTime":7462223,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-oftryst-shard-00-02.mnljjja.mongodb.net:27017":{"$clusterTime":null,"address":"ac-oftryst-shard-00-02.mnljjja.mongodb.net:27017","arbiters":[],"electionId":null,"error":null,"hosts":[],"iscryptd":false,"lastUpdateTime":7462223,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":"atlas-140ur2-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"service":"post-service","stack":"MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/\n    at _handleConnectionErrors (/home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/mongoose/lib/connection.js:1169:11)\n    at NativeConnection.openUri (/home/enisco29/Desktop/my-projects/micro_service_social_media/post-service/node_modules/mongoose/lib/connection.js:1100:11)","timestamp":"2025-11-05T16:17:46.807Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:18:27.786Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:18:37.540Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:19:03.335Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:19:14.980Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:20:47.954Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:21:04.773Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:21:59.460Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:22:14.053Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:22:20.794Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:24:54.328Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:24:58.842Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:25:12.992Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:28:02.688Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:28:21.309Z"}
+{"level":"info","message":"Received GET request to /api/posts/post","service":"post-service","timestamp":"2025-11-05T16:28:31.565Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:28:31.566Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:28:40.872Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:28:43.673Z"}
+{"level":"info","message":"Received GET request to /api/posts/post","service":"post-service","timestamp":"2025-11-05T16:28:50.784Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:28:50.784Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:29:07.704Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:29:07.705Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:29:07.706Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:29:35.374Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:29:50.147Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:29:55.153Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:29:55.153Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:29:55.157Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:30:14.096Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:30:14.097Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:30:14.098Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:30:21.495Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:30:36.405Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:30:51.179Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:30:51.180Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:30:51.182Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:30:52.982Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:30:52.983Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:30:52.984Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:30:54.307Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:30:54.308Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:30:54.308Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:30:55.525Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:30:55.525Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:30:55.526Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:34:05.257Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:34:41.859Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:34:45.930Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:34:48.172Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:38:16.611Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:38:16.612Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:38:16.614Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:38:25.807Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:38:25.807Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:38:25.810Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:38:27.275Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:38:27.277Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:38:27.278Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:38:28.555Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:38:28.556Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:38:28.557Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T16:39:15.510Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:39:15.510Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T16:39:15.515Z"}
+{"buffer":{"data":[105,11,125,179,110,139,181,90,128,166,45,4],"type":"Buffer"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-11-05T16:39:15.740Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:39:23.367Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:39:23.367Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:39:23.368Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:39:29.397Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:39:29.398Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:39:29.398Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-05T16:39:38.861Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-05T16:39:56.154Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:40:18.494Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:40:18.495Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:40:18.496Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T16:40:25.742Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:40:25.742Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T16:40:25.747Z"}
+{"buffer":{"data":[105,11,125,249,161,53,46,224,29,45,198,169],"type":"Buffer"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-11-05T16:40:25.949Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:40:31.867Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:40:31.868Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:40:31.868Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:40:36.424Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:40:36.424Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:40:36.425Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:40:37.698Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:40:37.698Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:40:37.699Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-05T16:40:57.714Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:40:57.715Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-05T16:40:57.717Z"}
+{"buffer":{"data":[105,11,126,25,161,53,46,224,29,45,198,173],"type":"Buffer"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-11-05T16:40:57.882Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:41:02.829Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:41:02.829Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:41:02.829Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T16:42:10.063Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T16:42:10.063Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T16:42:10.063Z"}

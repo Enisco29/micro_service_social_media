@@ -2,12 +2,19 @@ import Post from "../models/Post.js";
 import logger from "../utils/logger.js";
 import { validateCreatePost } from "../utils/validation.js";
 
+async function invalidatePostCache(req, input) {
+  const keys = await req.redisClient.keys("posts:*");
+  if (keys.length > 0) {
+    await req.redisClient.del(keys);
+  }
+}
+
+//Create a post controller
 export const createPost = async (req, res) => {
   logger.info("Create post endpoint hit...");
 
   try {
     //validate request body
-
     const { error } = validateCreatePost(req.body);
     if (error) {
       logger.warn("Validation error", error.details[0].message);
@@ -33,6 +40,7 @@ export const createPost = async (req, res) => {
     });
 
     await newPost.save();
+    await invalidatePostCache(req, newPost._id.toString());
 
     logger.info("Post created successfully", newPost._id);
 
@@ -50,9 +58,39 @@ export const createPost = async (req, res) => {
   }
 };
 
-export const getAllPost = (req, res) => {
+//get all post
+export const getAllPost = async (req, res) => {
   logger.info("get posts endpoint hit..");
   try {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const startIndex = (page - 1) * limit;
+
+    const cahceKey = `posts:${page}:${limit}`;
+    const cachedPosts = await req.redisClient.get(cahceKey);
+
+    if (cachedPosts) {
+      return res.status(200).json(JSON.parse(cachedPosts));
+    }
+
+    const posts = await Post.find({})
+      .sort({ createdAt: -1 })
+      .skip(startIndex)
+      .limit(limit);
+
+    const totalNoOfPosts = await Post.countDocuments();
+
+    const result = {
+      posts,
+      courrentPage: page,
+      totalPages: Math.ceil(totalNoOfPosts / limit),
+      totalPosts: totalNoOfPosts,
+    };
+
+    //save post in redis cache
+    await req.redisClient.setex(cahceKey, 300, JSON.stringify(result));
+
+    res.json(result);
   } catch (error) {
     logger.error("Error fetching post:", error);
     res.status(500).json({
