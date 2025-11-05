@@ -3,6 +3,9 @@ import logger from "../utils/logger.js";
 import { validateCreatePost } from "../utils/validation.js";
 
 async function invalidatePostCache(req, input) {
+  const cacheKey = `post:${input}`;
+  await req.redisClient.del(cacheKey);
+
   const keys = await req.redisClient.keys("posts:*");
   if (keys.length > 0) {
     await req.redisClient.del(keys);
@@ -100,9 +103,31 @@ export const getAllPost = async (req, res) => {
   }
 };
 
-export const getPosts = (req, res) => {
+//GET POST BY ID
+export const getPostById = async (req, res) => {
   logger.info("get post endpoint hit..");
   try {
+    const postId = req.params.id;
+    const cacheKey = `post:${postId}`;
+    const cachedPost = await req.redisClient.get(cacheKey);
+
+    if (cachedPost) {
+      return res.status(200).json(JSON.parse(cachedPost));
+    }
+
+    const postById = await Post.findById(postId);
+
+    if (!postById) {
+      return res.status(404).json({
+        success: false,
+        message: "Post not found",
+      });
+    }
+
+    //save post in redis cache
+    await req.redisClient.setex(cacheKey, 3000, JSON.stringify(postById));
+
+    res.status(200).json(postById);
   } catch (error) {
     logger.error("Error fetching post:", error);
     res.status(500).json({
@@ -112,9 +137,27 @@ export const getPosts = (req, res) => {
   }
 };
 
-export const deletePost = (req, res) => {
+export const deletePost = async (req, res) => {
   logger.info("delete post endpoint hit..");
   try {
+    const post = await Post.findOneAndDelete({
+      _id: req.params.id,
+      user: req.user.userId,
+    });
+
+    if (!post) {
+      return res.status(404).json({
+        success: false,
+        message: "Post not found or unauthorized",
+      });
+    }
+    //delete post from redis cache
+    await invalidatePostCache(req, req.params.id);
+
+    res.status(200).json({
+      success: true,
+      message: "Post deleted successfully",
+    });
   } catch (error) {
     logger.error("Error deleting post:", error);
     res.status(500).json({
