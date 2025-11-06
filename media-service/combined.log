@@ -1,0 +1,6 @@
+{"level":"info","message":"Identity service running on port 3003","service":"media-service","timestamp":"2025-11-06T22:51:51.072Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-11-06T22:52:04.916Z"}
+{"level":"info","message":"Identity service running on port 3003","service":"media-service","timestamp":"2025-11-06T22:52:44.593Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-11-06T22:52:51.488Z"}
+{"level":"info","message":"Identity service running on port 3003","service":"media-service","timestamp":"2025-11-06T22:53:40.891Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-11-06T22:54:05.963Z"}

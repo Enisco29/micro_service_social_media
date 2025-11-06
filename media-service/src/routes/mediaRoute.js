@@ -3,6 +3,7 @@ import multer from "multer";
 import uploadMedia from "../controllers/mediaController.js";
 import { autheticatedRequest } from "../middlewares/authMiddleware.js";
 import logger from "../utils/logger.js";
+import { rateLimitByIP } from "../middlewares/rateLimit.js";
 
 const router = express.Router();
 
@@ -44,6 +45,7 @@ router.post(
       next();
     });
   },
+  rateLimitByIP,
   uploadMedia
 );
 
