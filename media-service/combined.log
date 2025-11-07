@@ -4,3 +4,23 @@
 {"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-11-06T22:52:51.488Z"}
 {"level":"info","message":"Identity service running on port 3003","service":"media-service","timestamp":"2025-11-06T22:53:40.891Z"}
 {"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-11-06T22:54:05.963Z"}
+{"level":"info","message":"Identity service running on port 3003","service":"media-service","timestamp":"2025-11-07T15:30:43.854Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-11-07T15:30:56.233Z"}
+{"level":"info","message":"Identity service running on port 3003","service":"media-service","timestamp":"2025-11-07T15:32:48.636Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-11-07T15:33:00.443Z"}
+{"level":"info","message":"Identity service running on port 3003","service":"media-service","timestamp":"2025-11-07T15:33:36.585Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-11-07T15:33:43.321Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-11-07T15:42:16.584Z"}
+{"level":"info","message":"Request body, undefined","service":"media-service","timestamp":"2025-11-07T15:42:16.585Z"}
+{"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2025-11-07T15:42:16.612Z"}
+{"level":"info","message":"File details: name=WIN_20240814_11_01_16_Pro.jpg, type=image/jpeg","service":"media-service","timestamp":"2025-11-07T15:42:16.613Z"}
+{"level":"info","message":"Uploading to cloudinary starting...","service":"media-service","timestamp":"2025-11-07T15:42:16.613Z"}
+{"http_code":499,"level":"error","message":"Request Timeout","name":"TimeoutError","service":"media-service","timestamp":"2025-11-07T15:42:21.624Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","error":{"http_code":499,"message":"Request Timeout","name":"TimeoutError"},"exception":{"error":{"http_code":499,"message":"Request Timeout","name":"TimeoutError"}},"level":"error","message":"Unhandle Rejection at","service":"media-service","timestamp":"2025-11-07T15:42:21.627Z"}
+{"http_code":499,"level":"error","message":"Request Timeout","name":"TimeoutError","service":"media-service","timestamp":"2025-11-07T15:42:21.628Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-11-07T15:42:48.398Z"}
+{"level":"info","message":"Request body, undefined","service":"media-service","timestamp":"2025-11-07T15:42:48.399Z"}
+{"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2025-11-07T15:42:48.403Z"}
+{"level":"info","message":"File details: name=WIN_20240814_11_01_16_Pro.jpg, type=image/jpeg","service":"media-service","timestamp":"2025-11-07T15:42:48.403Z"}
+{"level":"info","message":"Uploading to cloudinary starting...","service":"media-service","timestamp":"2025-11-07T15:42:48.403Z"}
+{"level":"info","message":"Cloudinary upload successfully. Public Id: -afou9ezakemtl50jrat5","service":"media-service","timestamp":"2025-11-07T15:42:50.675Z"}

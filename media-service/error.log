@@ -1,0 +1,3 @@
+{"http_code":499,"level":"error","message":"Request Timeout","name":"TimeoutError","service":"media-service","timestamp":"2025-11-07T15:42:21.624Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","error":{"http_code":499,"message":"Request Timeout","name":"TimeoutError"},"exception":{"error":{"http_code":499,"message":"Request Timeout","name":"TimeoutError"}},"level":"error","message":"Unhandle Rejection at","service":"media-service","timestamp":"2025-11-07T15:42:21.627Z"}
+{"http_code":499,"level":"error","message":"Request Timeout","name":"TimeoutError","service":"media-service","timestamp":"2025-11-07T15:42:21.628Z"}

@@ -2,3 +2,7 @@
 {"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-11-03T21:14:10.315Z"}
 {"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-11-05T14:08:38.301Z"}
 {"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-11-05T14:09:44.486Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 127.0.0.1:3001","service":"api-gateway","timestamp":"2025-11-07T15:23:04.051Z"}
+{"level":"error","message":"Proxy error: srcReq.headers is not a function","service":"api-gateway","timestamp":"2025-11-07T15:28:29.768Z"}
+{"level":"error","message":"Proxy error: srcReq.headers is not a function","service":"api-gateway","timestamp":"2025-11-07T15:29:43.120Z"}
+{"level":"error","message":"Proxy error: srcReq.headers is not a function","service":"api-gateway","timestamp":"2025-11-07T15:34:00.920Z"}

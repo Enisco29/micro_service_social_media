@@ -14,9 +14,9 @@ const uploadMedia = async (req, res) => {
       });
     }
 
-    const { originalName, mimeType, buffer } = req.file;
+    const { originalname, mimetype, buffer } = req.file;
     const userId = req.user.userId;
-    logger.info(`File details: name=${originalName}, type=${mimeType}`);
+    logger.info(`File details: name=${originalname}, type=${mimetype}`);
     logger.info("Uploading to cloudinary starting...");
 
     const cloudinaryUploadResult = await uploadmediaToCloudinary(req.file);
@@ -26,8 +26,8 @@ const uploadMedia = async (req, res) => {
 
     const newlyCreatedMedia = new Media({
       publicId: cloudinaryUploadResult.public_id,
-      originalName,
-      mimeType,
+      originalName: originalname,
+      mimeType: mimetype,
       url: cloudinaryUploadResult.secure_url,
       userId,
     });
@@ -41,7 +41,7 @@ const uploadMedia = async (req, res) => {
       message: "Media uploaded successfully",
     });
   } catch (error) {
-    logger.error("Error creating post:", error);
+    logger.error("Error creating media:", error);
     res.status(500).json({
       success: false,
       message: "Internal server error",

@@ -328,3 +328,25 @@
 {"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-05T20:47:33.716Z"}
 {"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-05T20:47:33.716Z"}
 {"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-05T20:47:33.717Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-07T15:23:57.755Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-07T15:23:59.607Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-07T15:55:46.337Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-07T15:55:46.338Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-07T15:55:46.343Z"}
+{"0":"\"","1":"m","10":"i","11":"s","12":" ","13":"n","14":"o","15":"t","16":" ","17":"a","18":"l","19":"l","2":"e","20":"o","21":"w","22":"e","23":"d","3":"d","4":"i","5":"a","6":"I","7":"d","8":"\"","9":" ","level":"warn","message":"Validation error","service":"post-service","timestamp":"2025-11-07T15:55:46.351Z"}
+{"level":"info","message":"Identity service running on port 3002","service":"post-service","timestamp":"2025-11-07T17:25:48.835Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-11-07T17:26:10.504Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-07T17:27:06.586Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-07T17:27:06.586Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-07T17:27:06.592Z"}
+{"0":"\"","1":"m","10":"i","11":"s","12":" ","13":"n","14":"o","15":"t","16":" ","17":"a","18":"l","19":"l","2":"e","20":"o","21":"w","22":"e","23":"d","3":"d","4":"i","5":"a","6":"I","7":"d","8":"\"","9":" ","level":"warn","message":"Validation error","service":"post-service","timestamp":"2025-11-07T17:27:06.599Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-11-07T17:27:53.632Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-07T17:27:53.633Z"}
+{"level":"info","message":"Create post endpoint hit...","service":"post-service","timestamp":"2025-11-07T17:27:53.636Z"}
+{"buffer":{"data":[105,14,44,25,29,86,50,166,81,57,21,171],"type":"Buffer"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-11-07T17:27:53.855Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-07T17:29:03.236Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-07T17:29:03.237Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-07T17:29:03.240Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-11-07T17:29:15.567Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-11-07T17:29:15.567Z"}
+{"level":"info","message":"get posts endpoint hit..","service":"post-service","timestamp":"2025-11-07T17:29:15.568Z"}
